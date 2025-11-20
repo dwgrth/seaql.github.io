@@ -63,7 +63,7 @@ Consider our readme example,
 
 ```rust
 // SeaORM
-let cake_with_filling: Vec<(cake::Model, Option<fruit::Model>)> =
+let cake_with_filling: Vec<(cake::Model, Option<filling::Model>)> =
     Cake::find().find_also_related(Filling).all(db).await?;
 ```
 
